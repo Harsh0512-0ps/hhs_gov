@@ -79,7 +79,7 @@ fig = go.Figure()
 fig.add_trace(go.Scatter(x=dates, y=hi, mode='lines', line=dict(width=0), showlegend=False, hoverinfo='skip'))
 fig.add_trace(go.Scatter(x=dates, y=lo, mode='lines', fill='tonexty', fillcolor='rgba(42,120,214,0.18)',
                          line=dict(width=0), name='80% interval'))
-fig.add_trace(go.Scatter(x=hist.date, y=hist.hhs_care, name='Actual', line=dict(color='#333', width=2)))
+fig.add_trace(go.Scatter(x=hist.date, y=hist.hhs_care, name='Actual', line=dict(color='#9a9890', width=2)))
 fig.add_trace(go.Scatter(x=dates, y=mid, mode='lines+markers', name=f'{MODEL} forecast', line=dict(color='#2a78d6', width=2.5)))
 if SCEN:
     fig.add_trace(go.Scatter(x=dates, y=scen, name=f'Scenario ({SCEN:+d}% transfers)',
